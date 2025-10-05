@@ -13,7 +13,7 @@ function HomePage() {
         const movieResults = data.results || [];
         setMovies(movieResults);
         if (movieResults.length > 0) {
-          setFeatured(movieResults[0]); // first trending movie as hero
+          setFeatured(movieResults[0]);
         }
       })
       .catch((err) => console.error("Error fetching movies:", err));
