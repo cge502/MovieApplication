@@ -34,8 +34,8 @@ function HomePage() {
         </Link>
       )}
 
-      {/* 🎬 TRENDING MOVIES */}
-      <h2>🔥 Trending Movies</h2>
+      
+      <h2>Trending Movies</h2>
       <MovieList movies={movies} />
     </div>
   );

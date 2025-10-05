@@ -21,7 +21,7 @@ function FavoritesPage() {
         const idsParam = favIds.join(",");
         const res = await fetch(`http://localhost:8080/api/movies/favorites?ids=${idsParam}`);
         const movies = await res.json();
-        setFavorites(movies.map(JSON.parse)); // each item is a string of JSON from backend
+        setFavorites(movies.map(JSON.parse)); 
       } catch (err) {
         console.error("Error fetching favorites:", err);
       } finally {
@@ -36,7 +36,7 @@ function FavoritesPage() {
 
   return (
     <div>
-      <h2>⭐ Your Favorites</h2>
+      <h2>Your Favorites</h2>
       {favorites.length === 0 ? (
         <p>No favorites yet. Go add some!</p>
       ) : (
