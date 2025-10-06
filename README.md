@@ -2,8 +2,8 @@
 
 A full-stack movie application built with React.js frontend and Spring Boot backend
 
-Frontend: React.js, React Router DOM v6.20.1
+Frontend: React.js
 Backend: Spring Boot, Java
 API: TMDB https://www.themoviedb.org/
-
+NOTE:  It's recommended that you use React Router DOM v6.20.1
 You will need a TMDB account to get your own API key.
